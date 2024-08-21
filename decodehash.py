@@ -13,11 +13,11 @@ with open('hash_data_sha256.txt', 'r') as file:
         else:
             print(f"Skipping malformed line: {line}")
 
-# Prompt the user to input a SHA-256 hash
-user_input_hash = input("Enter a SHA-256 hash: ")
+    # Prompt the user to input a SHA-256 hash
+    user_input_hash = input("Enter a SHA-256 hash: ")
 
-# Search for the hash in the dictionary
-if user_input_hash in hash_to_word:
+    # Search for the hash in the dictionary
+    if user_input_hash in hash_to_word:
     print(f"The plain text for the hash {user_input_hash} is: {hash_to_word[user_input_hash]}")
-else:
+    else:
     print("No matching plain text found for the given hash.")
